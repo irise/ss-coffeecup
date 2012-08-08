@@ -1,7 +1,7 @@
 {
-  "name": "ss-coffeekup",
+  "name": "ss-coffeecup",
   "author": "Owen Barnes <owen@socketstream.org>",
-  "description": "CoffeeKup template engine wrapper providing server-side compiled templates for SocketStream apps",
+  "description": "Coffeecup template engine wrapper providing server-side compiled templates for SocketStream apps",
   "version": "0.1.2",
   "main": "./engine.js",
   "repository": {
@@ -12,7 +12,7 @@
     "node": ">= 0.6.0"
   },
   "dependencies": {
-    "coffeekup": "0.3.1"
+    "coffeecup": "0.3.16"
   },
   "devDependencies": {}
 }

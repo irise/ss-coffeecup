@@ -1,19 +1,19 @@
-// CoffeeKup Template Engine wrapper for SocketStream 0.3
+// Coffeecup Template Engine wrapper for SocketStream 0.3
 
-var ck = require('coffeekup');
+var ck = require('coffeecup');
 
 exports.init = function(ss, config) {
 
   return {
 
-    name: 'CoffeeKup',
+    name: 'Coffeecup',
 
-    // Opening code to use when a CoffeeKup template is called for the first time
+    // Opening code to use when a Coffeecup template is called for the first time
     prefix: function() {
       return '<script type="text/javascript">(function(){var t=require(\'socketstream\').tmpl;'
     },
 
-    // Closing code once all CoffeeKup templates have been written into the <script> tag
+    // Closing code once all Coffeecup templates have been written into the <script> tag
     suffix: function() {
       return '}).call(this);</script>';
     },
@@ -26,7 +26,7 @@ exports.init = function(ss, config) {
       try {
         compiledTemplate = ck.compile(template).toString();
       } catch (e) {
-        var message = '! Error compiling the ' + path + ' template into CoffeeKup';
+        var message = '! Error compiling the ' + path + ' template into Coffeecup';
         console.log(String.prototype.hasOwnProperty('red') && message.red || message);
         throw new Error(e);
         compiledTemplate = '';
