@@ -12,7 +12,7 @@
     "node": ">= 0.6.0"
   },
   "dependencies": {
-    "coffeecup": "0.3.16"
+    "coffeecup": "0.3.x"
   },
   "devDependencies": {}
 }
